@@ -129,6 +129,9 @@ https://youtu.be/d8ScC-0NhUE
 
 ## Standout Suggestions
 
-- Agregar un paso para limpiar la data podría incrementar el accuracy.
+- Adding a step to clean up the data could increase the accuracy.
 - We could use an AKS and validate the performance with many requests and see the escalation.
+- Adding Deep Learnign capability coud improve the performance.
+
+![image](https://user-images.githubusercontent.com/8076356/107149846-fe3dbf80-6928-11eb-87ad-a127315b373a.png)
 
