@@ -1,12 +1,11 @@
 *NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
 
-# Your Project Title Here
+# Project 2 - Operationalizing Machine Learning
 
-*TODO:* Write an overview to your project.
+This project is the second project of the Udacity Azure ML Nanodegree. In this project, we deploy a model, consume endpoints to interact with the deployed model in Azure ML Studio and perform pipeline automation to improve machine learning operations.
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
 
 ![Arquitectura](https://user-images.githubusercontent.com/8076356/107143883-74302f80-6905-11eb-8a6a-ff6955193748.png)
 
@@ -67,22 +66,65 @@ The best model was Voting Ensemble
 
 ## STEP 3: Automated ML Experiment
 
-### 3. Deploy the best model
-In this step, the best model from the AutoML run, Voting Ensemble, was deployed using Azure Container Instance.
+### 3.1. Deploy the best model
+Deploying the model in a Azure Container Instance.
 
-### 4. Enable logging
-In this step, logging was enabled with a Python script and the Application Insights page could be used to monitor the app.
+![image](https://user-images.githubusercontent.com/8076356/107149167-24f9f700-6925-11eb-8eb0-2b470b3dfc4a.png)
 
-### 5. Check swagger documentation
-In this step, swagger ui was used to see the input required for an API request in order to obtain predictions from the deployed model. Two modes of API requests were seen, i.e. GET and POST.
 
-### 6. Consume model endpoint
+## STEP 4: Enable logging
+We run a Python script to activate the Application Insights.
+
+Before running log.py
+
+![image](https://user-images.githubusercontent.com/8076356/107149214-5ecafd80-6925-11eb-9372-1ffe01447079.png)
+
+After running log.py
+
+![image](https://user-images.githubusercontent.com/8076356/107149228-71453700-6925-11eb-9eae-18d58e3787b5.png)
+
+Running log.py
+
+![image](https://user-images.githubusercontent.com/8076356/107149242-85893400-6925-11eb-92f6-a74df3ea74b7.png)
+
+## STEP 5: Swagger Documentation
+We using swagger ui was used to see the input required for an API request in order to obtain predictions from the deployed model.
+
+Default localhost
+
+![image](https://user-images.githubusercontent.com/8076356/107149285-c7b27580-6925-11eb-97f3-a3a5799b38dc.png)
+
+Localhost:8000
+
+![image](https://user-images.githubusercontent.com/8076356/107149300-dac54580-6925-11eb-8b5c-6336e3e46571.png)
+
+GET
+
+![image](https://user-images.githubusercontent.com/8076356/107149329-fc263180-6925-11eb-8459-be99d49e066a.png)
+
+POST
+
+![image](https://user-images.githubusercontent.com/8076356/107149336-0ba57a80-6926-11eb-97c8-0e0c62ed41f5.png)
+
+
+## STEP 6: Consume model endpoint
 After finding out the json structure of the input, in this step a Python script was run to get the prediction from the endpoint by sending the new data in the required input structure.
 
-### 7. Create, publish, and consume a pipeline
+Changgin scoring_url and primary key:
+
+![image](https://user-images.githubusercontent.com/8076356/107149396-5cb56e80-6926-11eb-92f1-656f0c325105.png)
+
+Running endopoint.py
+
+![image](https://user-images.githubusercontent.com/8076356/107149408-6ccd4e00-6926-11eb-9005-4530876b39ff.png)
+
+
+### STEP 7. Create, publish, and consume a pipeline
 After the model was deployed, a pipeline was created and publish to ease duplicating the project flow. Another run was scheduled and eventually re-run.
 
 Completed pipeline run:
+
+![image](https://user-images.githubusercontent.com/8076356/107149477-c897d700-6926-11eb-8731-85c52fb5e461.png)
 
 ## Screen Recording
 Link of youtube
@@ -90,4 +132,7 @@ Link of youtube
 https://youtu.be/d8ScC-0NhUE
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+- Agregar un paso para limpiar la data podría incrementar el accuracy.
+- We could use an AKS and validate the performance with many requests and see the escalation.
+
