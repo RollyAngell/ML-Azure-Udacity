@@ -70,4 +70,4 @@
 # Total:        114  160  28.0    172     199#
 
 
- ab -n 10 -v 4 -p data.json -T 'application/json' -H 'Authorization: Bearer REPLACE_WITH_KEY' http://REPLACE_WITH_API_URL/score
+ ab -n 10 -v 4 -p data.json -T 'application/json' -H 'Authorization: Bearer Gk42PI5MNvNO1h7YwVIs5V58RXUk1WbM' http://d2292f78-33b5-495e-9437-9ab518fa918b.southcentralus.azurecontainer.io/score
