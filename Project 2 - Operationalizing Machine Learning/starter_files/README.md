@@ -104,8 +104,6 @@ POST
 
 
 ## STEP 6: Consume model endpoint
-After finding out the json structure of the input, in this step a Python script was run to get the prediction from the endpoint by sending the new data in the required input structure.
-
 Changgin scoring_url and primary key:
 
 ![image](https://user-images.githubusercontent.com/8076356/107149396-5cb56e80-6926-11eb-92f1-656f0c325105.png)
@@ -116,8 +114,6 @@ Running endopoint.py
 
 
 ### STEP 7. Create, publish, and consume a pipeline
-After the model was deployed, a pipeline was created and publish to ease duplicating the project flow. Another run was scheduled and eventually re-run.
-
 Completed pipeline run:
 
 ![image](https://user-images.githubusercontent.com/8076356/107149477-c897d700-6926-11eb-8731-85c52fb5e461.png)
