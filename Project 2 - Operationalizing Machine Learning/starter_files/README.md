@@ -1,6 +1,3 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
-
 # Project 2 - Operationalizing Machine Learning
 
 This project is the second project of the Udacity Azure ML Nanodegree. In this project, we deploy a model, consume endpoints to interact with the deployed model in Azure ML Studio and perform pipeline automation to improve machine learning operations.
@@ -10,7 +7,6 @@ This project is the second project of the Udacity Azure ML Nanodegree. In this p
 ![Arquitectura](https://user-images.githubusercontent.com/8076356/107143883-74302f80-6905-11eb-8a6a-ff6955193748.png)
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
 
 ## STEP 1: Authentication
 
