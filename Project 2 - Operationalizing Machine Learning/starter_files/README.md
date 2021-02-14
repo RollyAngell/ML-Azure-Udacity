@@ -69,13 +69,13 @@ Deploying the model in a Azure Container Instance.
 
 
 ## STEP 4: Enable logging
-We run a Python script to activate the Application Insights.
+We choose the best model for deployment and enable "Authentication" while deploying the model using Azure Container Instance (ACI). The executed code in logs.py enables Application Insights. 
 
-Before running log.py
+"Application Insights enabled" is disabled before executing logs.py.
 
 ![image](https://user-images.githubusercontent.com/8076356/107149214-5ecafd80-6925-11eb-9372-1ffe01447079.png)
 
-After running log.py
+"Application Insights enabled" is enabled after executing logs.py.
 
 ![image](https://user-images.githubusercontent.com/8076356/107149228-71453700-6925-11eb-9eae-18d58e3787b5.png)
 
@@ -84,7 +84,7 @@ Running log.py
 ![image](https://user-images.githubusercontent.com/8076356/107149242-85893400-6925-11eb-92f6-a74df3ea74b7.png)
 
 ## STEP 5: Swagger Documentation
-We using swagger ui was used to see the input required for an API request in order to obtain predictions from the deployed model.
+We using swagger ui to see the input required for an API request in order to obtain predictions from the deployed model. Swagger helps in building, documenting, and consuming RESTful web services. It also explains what types of HTTP requests that an API can consume, like POST and GET.
 
 Default localhost
 
@@ -108,15 +108,30 @@ Changgin scoring_url and primary key:
 
 ![image](https://user-images.githubusercontent.com/8076356/107149396-5cb56e80-6926-11eb-92f1-656f0c325105.png)
 
-Running endopoint.py
+The following screenshot demonstrates the output received from the deployed model by running endpoint.py against the REST API
 
 ![image](https://user-images.githubusercontent.com/8076356/107149408-6ccd4e00-6926-11eb-9005-4530876b39ff.png)
 
 
 ### STEP 7. Create, publish, and consume a pipeline
+Pipeline created
+![image](https://user-images.githubusercontent.com/8076356/107867511-8a7c4500-6e49-11eb-9b88-1fdf69ab2f46.png)
+
+Here we show a REST endpoint and a status of ACTIVE.
+
+![image](https://user-images.githubusercontent.com/8076356/107867557-c31c1e80-6e49-11eb-8a3f-c9278de62c28.png)
+
+![image](https://user-images.githubusercontent.com/8076356/107867572-eba41880-6e49-11eb-8f59-449f410f450f.png)
+
+![image](https://user-images.githubusercontent.com/8076356/107867580-0aa2aa80-6e4a-11eb-8550-f57207cc35cf.png)
+
 Completed pipeline run:
 
 ![image](https://user-images.githubusercontent.com/8076356/107149477-c897d700-6926-11eb-8731-85c52fb5e461.png)
+
+Here we use RunDetails Widget.
+
+![image](https://user-images.githubusercontent.com/8076356/107867356-53596400-6e48-11eb-8bd5-062ffe453e98.png)
 
 ## Screen Recording
 Link of youtube
