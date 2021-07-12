@@ -151,12 +151,26 @@ Deploying in ACI
 In azure machine learning workspace.
 ![image](https://user-images.githubusercontent.com/8076356/125243026-1f795200-e2b3-11eb-97f6-2eea18400483.png)
 
+I send a request to the web service you deployed to test it
+![image](https://user-images.githubusercontent.com/8076356/125244344-d6c29880-e2b4-11eb-8f59-7efc6f577d71.png)
+
+
+I print the logs of the web service and delete the service
+![image](https://user-images.githubusercontent.com/8076356/125244403-e80ba500-e2b4-11eb-887c-f18d34ce9f02.png)
+
+Azure ML show how to consume the web service
+
+![image](https://user-images.githubusercontent.com/8076356/125244498-05407380-e2b5-11eb-8b7a-78dc3e8b9ab9.png)
+
+I proved that code and works well
+![image](https://user-images.githubusercontent.com/8076356/125244568-19847080-e2b5-11eb-964c-dd3c59e40c41.png)
+
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+Link de Youtube
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+AutoML works a lot in feature engineering process and that help ML algorithms learn better.
+For the HyperDrive run, different algorithms such as Random Forest or Voting Ensemble can be used to obtain a better accuracy.
+For AutoML give more time for experiment_timeout_minutes can increase accuracy.
+
