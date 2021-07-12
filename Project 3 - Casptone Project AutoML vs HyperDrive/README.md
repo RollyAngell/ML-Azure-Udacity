@@ -58,7 +58,7 @@ dataset = Dataset.Tabular.from_delimited_files("https://raw.githubusercontent.co
 ## Automated ML
 
 Setting
-- Experiment_timeout_minutes:	We choose 30 minutos that means the experiment will exit after that time.
+- Experiment_timeout_minutes:	I choose 30 minutos that means the experiment will exit after that time.
 - Max_concurrent_iterations:	To get result quickly we choose 5 that means that 5 iterations at the same time.
 - Primary_metric:	This is the metric that we want to optimize (accuracy). I will use 'AUC_weighted' as 'primary_metric' parameter. AUC means the area under the Receiver Operating Characteristic Curve which plots the relationship between true positive rate and false positive rate. Since our dataset doesn't have high class imbalance, we can use ROC method for judging the performance of a model. I will use AUC_weighted in order to mitigate the effects of whatever little imbalance is there in the dataset. AUC_weighted is the arithmetic mean of the score for each class, weighted by the number of true instances in each class.
 - Task:	classification
