@@ -126,8 +126,8 @@ Setting
 The model was trained using different combinations of C and max_iter hyperparameters. C is inverse of regularization strength and max_iter is the maximum number of iterations taken for the solvers to converge.
 
 Parameter	Values used for the Hyperparameter Search
-C	--> 0.0005, 1.0
-max_iter --> 50, 100, 150, 200, 250
+* C	--> 0.0005, 1.0
+* max_iter --> 50, 100, 150, 200, 250
 The primary metric to optimise was the same as in the first experiment: Under the Curve Weighted.
 
 ![image](https://user-images.githubusercontent.com/8076356/125235354-f1424500-e2a7-11eb-9e78-66846594eb4d.png)
