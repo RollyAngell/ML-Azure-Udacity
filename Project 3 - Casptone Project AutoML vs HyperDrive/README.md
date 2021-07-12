@@ -123,6 +123,13 @@ Setting
 - primary_metric_goal:	In order to get the best model for our classification task, my goal is to maximize the AUC_weighted metric hence I will enter 'PrimaryMetricGoal.MAXIMIZE'as 'primary_metric_goal' parameter.
 - max_total_runs:	It is the maximum number of child runs that will be executed in the experiment to find the best model for the task intended. I will enter '25' as the 'max_total_runs' parameter which will produce a good and acceptable result in less amount of time.
 
+The model was trained using different combinations of C and max_iter hyperparameters. C is inverse of regularization strength and max_iter is the maximum number of iterations taken for the solvers to converge.
+
+Parameter	Values used for the Hyperparameter Search
+* C	--> 0.0005, 1.0
+* max_iter --> 50, 100, 150, 200, 250
+The primary metric to optimise was the same as in the first experiment: Under the Curve Weighted.
+
 ![image](https://user-images.githubusercontent.com/8076356/125235354-f1424500-e2a7-11eb-9e78-66846594eb4d.png)
 
 ### Results
@@ -141,16 +148,32 @@ Accuracy = 0.7575757575757576.
 
 ![image](https://user-images.githubusercontent.com/8076356/125240332-9b719b00-e2af-11eb-9da1-042b530e2939.png)
 
+## Register model of Hyperdrive
+
+Register the model is very useful, it can be re-use them on different occasions.
+
+![image](https://user-images.githubusercontent.com/8076356/125330134-fa64fd80-e30b-11eb-871f-941cdbd9aa5e.png)
+
+
 ## Model Deployment
 Deploying in ACI
+
+I chose the AutoML model because it demonstrate the best performance and deploy the model as a web service to an Azure Container Instance (ACI). The script initializes the service and runs the model using request data.
 
 ![image](https://user-images.githubusercontent.com/8076356/125242921-f5c02b00-e2b2-11eb-8a36-687b6248d841.png)
 ![image](https://user-images.githubusercontent.com/8076356/125242976-0b355500-e2b3-11eb-891a-eb2e4fccc98c.png)
 
 In azure machine learning workspace.
+Here we can see the model deployed in ACI in azure machine learning (endpoints)
 ![image](https://user-images.githubusercontent.com/8076356/125243026-1f795200-e2b3-11eb-97f6-2eea18400483.png)
 
+Model endpoint with Healthy Status
+
+![image](https://user-images.githubusercontent.com/8076356/125329992-c7bb0500-e30b-11eb-9028-7821aa4b684d.png)
+
+
 I send a request to the web service you deployed to test it
+I tested this deployed model by sending a random data sample as request and the model responded with an output ( '0' in my case meaning the patient did not die during the follow-up period ) which demonstrated its successful deployment.
 ![image](https://user-images.githubusercontent.com/8076356/125244344-d6c29880-e2b4-11eb-8f59-7efc6f577d71.png)
 
 
