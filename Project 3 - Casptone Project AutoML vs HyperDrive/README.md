@@ -83,13 +83,12 @@ AutoML checked for the 'Class Balancing Detection', 'Missing feature values impu
 - Missing feature values imputation  --> No feature missing values were detected in the training data.
 - High Cardinality Feature Detection  --> Your inputs were analyzed, and no high cardinality features were detected.
 
-AutoML performed 83 iterations out of which it produced VotingEnsemble as the best model with a metric score of 0.9210.
+AutoML performed 38 iterations out of which it produced VotingEnsemble as the best model with a metric score of 0.9213.
 
 VotingEnsemble is an ensemble model which combines multiple models to improve machine learning results. 
 It does so by predicting output on the weighted average of predicted class probabilities. 
 
-estimators: ['64', '58', '66', '44', '76', '54', '29', '72'],
-weights: [0.1111111111111111, 0.1111111111111111, 0.1111111111111111, 0.1111111111111111, 0.1111111111111111, 0.2222222222222222, 0.1111111111111111, 0.1111111111111111]
+weights=[0.26666666666666666, 0.06666666666666667, 0.13333333333333333, 0.06666666666666667, 0.06666666666666667, 0.2, 0.06666666666666667, 0.06666666666666667, 0.06666666666666667]
 
 ![image](https://user-images.githubusercontent.com/8076356/125241880-a4fc0280-e2b1-11eb-86b7-8d4d78087493.png)
 
