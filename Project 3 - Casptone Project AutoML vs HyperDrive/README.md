@@ -167,9 +167,10 @@ I proved that code and works well
 
 ## Screen Recording
 Link de Youtube
+- https://youtu.be/j3XK4g-PtO4
 
 ## Standout Suggestions
-AutoML works a lot in feature engineering process and that help ML algorithms learn better.
-For the HyperDrive run, different algorithms such as Random Forest or Voting Ensemble can be used to obtain a better accuracy.
-For AutoML give more time for experiment_timeout_minutes can increase accuracy.
+- AutoML works a lot in feature engineering process and that help ML algorithms learn better.
+- For the HyperDrive run, different algorithms such as Random Forest or Voting Ensemble can be used to obtain a better accuracy.
+- For AutoML give more time for experiment_timeout_minutes can increase accuracy.
 
