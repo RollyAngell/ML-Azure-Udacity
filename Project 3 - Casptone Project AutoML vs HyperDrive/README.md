@@ -83,7 +83,7 @@ AutoML checked for the 'Class Balancing Detection', 'Missing feature values impu
 - Missing feature values imputation  --> No feature missing values were detected in the training data.
 - High Cardinality Feature Detection  --> Your inputs were analyzed, and no high cardinality features were detected.
 
-AutoML performed 38 iterations out of which it produced VotingEnsemble as the best model with a metric score of 0.9213.
+AutoML performed 83 iterations out of which it produced VotingEnsemble as the best model with a metric score of 0.9210.
 
 VotingEnsemble is an ensemble model which combines multiple models to improve machine learning results. 
 It does so by predicting output on the weighted average of predicted class probabilities. 
@@ -167,9 +167,10 @@ I proved that code and works well
 
 ## Screen Recording
 Link de Youtube
+- https://youtu.be/j3XK4g-PtO4
 
 ## Standout Suggestions
-AutoML works a lot in feature engineering process and that help ML algorithms learn better.
-For the HyperDrive run, different algorithms such as Random Forest or Voting Ensemble can be used to obtain a better accuracy.
-For AutoML give more time for experiment_timeout_minutes can increase accuracy.
+- AutoML works a lot in feature engineering process and that help ML algorithms learn better.
+- For the HyperDrive run, different algorithms such as Random Forest or Voting Ensemble can be used to obtain a better accuracy.
+- For AutoML give more time for experiment_timeout_minutes can increase accuracy.
 
