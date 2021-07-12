@@ -158,8 +158,15 @@ Register the model is very useful, it can be re-use them on different occasions.
 ## Model Deployment
 Deploying in ACI
 
-I chose the AutoML model because it demonstrate the best performance and deploy the model as a web service to an Azure Container Instance (ACI). The script initializes the service and runs the model using request data.
+I chose the AutoML model because it demonstrate the best performance and deploy the model as a web service to an Azure Container Instance (ACI).
 
+Firts we generate the environment
+![image](https://user-images.githubusercontent.com/8076356/125331727-f9cd6680-e30d-11eb-841e-6e56dec97ee9.png)
+
+Then deploy with this code:
+![image](https://user-images.githubusercontent.com/8076356/125331797-12d61780-e30e-11eb-97a1-21f279c33961.png)
+
+Complete code of deployment
 ![image](https://user-images.githubusercontent.com/8076356/125242921-f5c02b00-e2b2-11eb-8a36-687b6248d841.png)
 ![image](https://user-images.githubusercontent.com/8076356/125242976-0b355500-e2b3-11eb-891a-eb2e4fccc98c.png)
 
@@ -175,6 +182,9 @@ Model endpoint with Healthy Status
 I send a request to the web service you deployed to test it
 I tested this deployed model by sending a random data sample as request and the model responded with an output ( '0' in my case meaning the patient did not die during the follow-up period ) which demonstrated its successful deployment.
 ![image](https://user-images.githubusercontent.com/8076356/125244344-d6c29880-e2b4-11eb-8f59-7efc6f577d71.png)
+
+I show the environment file
+![image](https://user-images.githubusercontent.com/8076356/125332067-65afcf00-e30e-11eb-86ab-b655e33cf6b9.png)
 
 
 I print the logs of the web service and delete the service
